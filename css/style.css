@@ -42,12 +42,14 @@ body {
 	padding: 0;
 	list-style: none;
 	width: 550px;
+	display: flex;
+	justify-content: center;
 }
 
 .nav-bar a {
 	position: relative;
-	width: 90px;
 	display: inline-block;
+	width: 90px;
 	text-decoration: none;
 	color: #000;
 	text-transform: uppercase;
@@ -58,12 +60,8 @@ body {
 	border-right: solid 1px #000;
 }
 
-.nav-bar a:first-child {
+.nav-bar li:first-child {
 	border-left: solid 1px #000;
-}
-
-.nav-bar a:hover {
-	border-right: none;
 }
 
 .nav-bar a:hover::after {
